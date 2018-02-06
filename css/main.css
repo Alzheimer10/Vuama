@@ -431,7 +431,7 @@ header {
 .header {
   background-size: cover;
   background-position: center;
-  padding-top: 10%;
+  padding-top: 60px;
 }
 
 .form-control {
@@ -492,6 +492,20 @@ ul.social li a {
   margi: 0 auto;
 }
 
+#how-work,
+#allies,
+#download {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#how-work,
+#allies,
+#download {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 #text-informativo {
   background: #231A21;
   color: white;
@@ -505,4 +519,8 @@ ul.social li a {
 #card_home .col-card {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+#allies {
+  background: #231A21;
 }

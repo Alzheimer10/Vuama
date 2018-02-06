@@ -1,3 +1,11 @@
+%margin-section{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+%padding-section{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 #text-informativo{
 	background: $color-tertiary;
 	color: white;
@@ -10,4 +18,20 @@
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+}
+
+#how-work{
+	@extend %margin-section;
+	@extend %padding-section;
+}
+
+#allies{
+	background: $color-tertiary;
+	@extend %margin-section;
+	@extend %padding-section;
+}
+
+#download{
+	@extend %padding-section;
+	@extend %margin-section;
 }
