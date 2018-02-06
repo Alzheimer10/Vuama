@@ -1,0 +1,65 @@
+/*!
+ * variables core.css (main.scss)
+ */
+
+/* path */
+$image-path:			'../img/';
+$font-path:				'../fonts/';
+
+/* fonts */
+
+/* 
+$font-primary:	'Raleway', sans-serif;
+$font-primary:	'Amatic SC', cursive;
+$font-primary: 'Architects Daughter', cursive;
+$font-primary: 'Poiret One', cursive;
+$font-secundary:  'Squada One', cursive; 
+*/
+@import url('https://fonts.googleapis.com/css?family=Abel');
+$font-primary:  'Abel', sans-serif;
+$font-secundary:  'Abel', sans-serif;
+$font-size-body:		20px;
+
+/* color-core */
+$color-primary: 		#f15632;
+$color-primary-hover: 	#F15632;
+$color-secondary:		#F79134; 
+$color-secondary-hover: #F79134; 
+$color-tertiary:		#231A21;
+$color-tertiary-hover:	#231A21;
+$bg-body: 				white;
+
+/* color-font */
+$color-font-primary:	#333;
+$color-font-secondary: 	#cfcccc;
+
+/* scrollbar */
+$scrollbar-bg:				$color-secondary;
+$scrollbar-btn-bg:			$color-secondary;
+$scrollbar-border-radius:	0px;
+$scrollbar-width:			15px;
+
+/* highlight */
+$bg-highlight: 			$color-tertiary;
+$color-highlight: 		$color-primary;
+
+$screen-xs:        		480px !default;
+$screen-xs-min:    		$screen-xs !default;
+$screen-phone:     		$screen-xs-min !default;
+
+
+$screen-sm:        		768px !default;
+$screen-sm-min:    		$screen-sm !default;
+$screen-tablet:    		$screen-sm-min !default;
+
+$screen-md:        		992px !default;
+$screen-md-min:    		$screen-md !default;
+$screen-desktop:   		$screen-md-min !default;
+
+$screen-lg:        		1200px !default;
+$screen-lg-min:    		$screen-lg !default;
+$screen-lg-desktop:		$screen-lg-min !default;
+
+$screen-xs-max:    		($screen-sm-min - 1) !default;
+$screen-sm-max:    		($screen-md-min - 1) !default;
+$screen-md-max:    		($screen-lg-min - 1) !default;

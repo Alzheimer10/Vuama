@@ -1,0 +1,38 @@
+{
+  "name": "Vuama",
+  "version": "1.0.0",
+  "description": "Vuama - website para una plataforma que permita la contratación de servicios, donde los pagos y negociaciones sean a través de está plataforma.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alzheimer10/Vuama.git"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "glub": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0",
+    "imagemin-pngcrush": "^5.1.0",
+    "jquery": "^3.3.1",
+    "scrollreveal": "^3.3.6",
+    "swiper": "^4.1.0",
+    "vivus": "^0.4.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alzheimer10/Vuama/issues"
+  },
+  "homepage": "https://github.com/Alzheimer10/Vuama#readme"
+}

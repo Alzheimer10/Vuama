@@ -1,0 +1,39 @@
+$bg-footer : $color-tertiary;
+footer{
+	background-color: $bg-footer;
+	#footer-top{
+		text-align: center;
+		color: white;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		ul{
+			li{
+				a{
+					color: white;
+				}
+			}
+		}
+	}
+	#footer-bottom{
+		background-color: white;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem; 
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+}
+
+ul.social {
+	list-style:none;
+	float: right;
+}
+ul.social li {
+	display:inline; 
+	padding: 0; 
+	margin:0 5px;
+}
+ul.social li a {
+	display:inline-block;
+ 	margi:0 auto;
+}

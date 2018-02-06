@@ -1,0 +1,67 @@
+/*::::::::::::::::::::::
+	  initial core
+::::::::::::::::::::::*/
+*,
+*:after,
+*:before {
+  	-webkit-box-sizing: border-box;
+  	box-sizing: border-box; 
+ 	/*@include transition(all 0.3s ease-in-out);*/
+}
+html {
+    font-size: $font-size-body;
+    min-height: 100%;
+    position: relative;
+}
+body{ 
+	background-color: $bg-body;
+    font-family: $font-primary;
+	color: $color-font-primary;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1{font-size: 2rem}
+h2{font-size: 1.5rem}
+h3{font-size: 1.17rem}
+h4{font-size: 1rem}
+h5{font-size: 0.8rem}
+h6{font-size: 0.6rem}
+
+p, span, a{
+	font-size: 1rem;
+}
+
+a{
+	color: $color-font-primary;
+	text-decoration: none;
+	outline: none; 
+	&:hover,
+	&:focus{ 
+		text-decoration: none;
+		color: $color-secondary;
+	}
+}
+
+ul{
+	list-style: none;
+    -webkit-padding-start: 0px;
+}
+
+input{
+	background: transparent;
+}
+
+.home header{
+	overflow: hidden;
+}
+
+header{
+	background-size: cover;
+	position: relative;
+	@media screen and (min-width: $screen-sm) {
+		max-height: 700px;
+	}
+}
+

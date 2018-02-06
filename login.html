@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="icon" href="logo.ico" type="image/x-icon">
+	<title>Vuama</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript"> 
+		function heightHeader(){
+			var myWidth = 0, myHeight = 0; 
+			if( typeof( window.innerWidth ) == 'number' ) { 
+			  //No-IE 
+			  myWidth = window.innerWidth; 
+			  myHeight = window.innerHeight; 
+			} else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+			  //IE 6+ 
+			  myWidth = document.documentElement.clientWidth; 
+			  myHeight = document.documentElement.clientHeight; 
+			} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+			  //IE 4 compatible 
+			  myWidth = document.body.clientWidth; 
+			  myHeight = document.body.clientHeight; 
+			} 
+			document.getElementById("header").style.height = myHeight+'px';
+		}
+		window.onresize = function(event) {
+			heightHeader();
+		};
+	</script> 
+</head>
+<body>
+	<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="image/logo/logo-white.svg" alt="logo-navbar" height="100%"></a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">INICIO</a></li>
+					<li><a href="#">COMO FUNCIONA</a></li>
+					<li><a href="#">AYUDA</a></li>
+					<li><a href="#">REGISTRAR </a></li>
+					<li><a href="#">ACCEDER </a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<header class="container-fluid header" id="header" style="background-image: url(image/home-repair4.jpg);">
+		<form action="" class="container-fluid">
+			<!-- Text input-->
+			<div class="col-sm-4 col-lg-3 col-sm-offset-7 col-lg-offset-8">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>INICIAR SECCIÓN</h1>
+					</div>
+					<div class="col-xs-12">
+					    <div class="form-group">
+					        <label class="control-label" for="email">Email</label>
+					        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md" required>
+					    </div>
+					</div>
+					<div class="col-xs-12">
+					    <div class="form-group">
+					        <label class="control-label" for="contraseña">Contraseña</label>
+					        <input id="contraseña" name="contraseña" type="text" placeholder="Contraseña" class="form-control input-md" required>
+					    </div>
+					</div>
+					<div class="col-xs-12 text-center">
+						<button type="submit" class="btn btn-default btn-lg">ACCEDER</button>
+						<p><a href="#">Olvidé mi contraseña</a> | <a href="#">Registrarme</a></p>
+					</div>
+				</div>
+			</div>
+		</form>
+	</header>
+	
+	<script> heightHeader(); </script>
+
+	<footer>
+		<div id="footer-top">
+			<div class="container">		
+				<div class="col-xs-12 col-sm-4">
+					<ul>
+						<li><h2 class="border__bottom">Descubrenos</h2></li>
+						<li><a href="#">Sobre VUAMA</a></li>
+						<li><a href="#">Trabajos</a></li>
+						<li><a href="#">Oficinas</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<ul>
+						<li><h2 class="border__bottom">VuamaAPP</h2></li>
+						<li><a href="#">Registrarme</a></li>
+						<li><a href="#">Mi Cuenta</a></li>
+						<li><a href="#">Proveedores</a></li>
+						<li><a href="#">Politicas de Privacidad</a></li>
+						<li><a href="#">Ayuda</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<ul>
+						<li><h2 class="border__bottom">Descarga nuestra APP</h2></li>
+						<li><a href="#"><img src="image/app/app_store.png" alt="#" width="70%"></a></li>
+						<li><a href="#"><img src="image/app/google_play.png" alt="#" width="70%"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer-bottom">
+			<span style="font-size: .8rem">Todos los derechos reservados @ 2018 | <a href="#" class="color-font-primary" style="font-size: .8rem">IMPRESSUM</a></span>
+            <ul class="social">
+                <li><a href="#" title="Rss"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            </ul>	
+		</div>
+	</footer>
+
+	<script src="node_modules/jquery/dist/jquery.min.js" ></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/*!
+ * button style
+ */
+$bg-btn-primary: $color5-u;
+.btn_primary{
+    @include border-radius(2px !important);
+	background: $bg-btn-primary;
+	color: white;
+	& a{
+		color: white;
+		&:hover{
+			color: white !important;
+		}
+	}
+	&:hover{
+		background: darken($bg-btn-primary,8);
+		color: white !important;
+
+	}
+}
+
+$color-outline-primary: $color5-u;
+
+.btn-outline-primary {
+    margin: 4px 0px;
+    color: $color-font-primary;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid $color-outline-primary;
+    @include border-radius(2px !important);
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: inline-table;
+	&:hover {
+/*	    color: #fff;
+	    background-color: $color-primary;
+	    border-color: $color-primary;*/
+	}
+}
