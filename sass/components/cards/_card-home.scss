@@ -66,9 +66,7 @@ $bg-card-1: white;
 			height: 100%;
 			width: 100%;
 			z-index:100;
-			@media screen and (min-width: $screen-sm){
-				opacity:0;
-			}
+
 			
 			&:hover {
 				opacity:1;
